@@ -374,9 +374,13 @@ main {
 
 /*---bmi---*/
 
-.bmi{
+
+
+.bmi-desc {
+    width: 41.9375rem;
     display: flex;
     flex-direction: column;
+    margin: 88px auto;
 }
 
 .bmi-card {
@@ -386,6 +390,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     color: white;
+    height: 487px;
 
 }
 
@@ -393,6 +398,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 52px;
+    margin-top: -60px;
 }
 
 .bmi-card-header {
@@ -406,7 +412,7 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.1);
     width: 310px;
     height: 216px;
-    text-align: center;
+    text-align: left;
     border-collapse: collapse;
 }
 
@@ -418,16 +424,22 @@ th {
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
+    padding-left: 15px;
 }
 
 .bmi-card-2 {
     width: 36.0625rem;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px
+    gap: 20px;
+}
+
+.calculator-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 
@@ -437,32 +449,34 @@ input,
     border: none;
     border-radius: 8px;
     width: 40%;
+    height: 25px;
     background: rgba(255, 255, 255, 0.1);
     padding: 12px 20px 12px 20px;
     margin-top: 12px;
-   
+
 }
 
 
 #sex {
     width: 47%;
+    height: 48px;
+
 }
 
 #activity {
     width: 95%;
+    height: 48px;
+
 }
 
-select{
+::placeholder,
+select {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    
+
 }
-
-
-
-
 
 
 /*---team---*/
@@ -574,12 +588,6 @@ select{
     border-radius: 18px;
 
 }
-
-
-
-
-
-
 
 /*---footer---*/
 .footer {
@@ -720,24 +728,42 @@ select{
 
     }
 
-    .banner-card-1 {
+   /* .banner-card-1 {
         width: 16rem;
         height: 6rem;
         margin-bottom: 14rem;
-        margin-right: -3rem;
+        margin-right: -5rem;
 
-    }
+    }*/
 
     .banner-text h3 {
         font-size: 18px;
     }
 
-    .banner-card-2 {
+    /*.banner-card-2 {
         width: 16rem;
         height: 98px;
         margin-top: -26rem;
+    }*/
+    .banner-card-1 {
+        width: 16rem;
+        height: 6rem;
+        margin-bottom: 10rem;
+        margin-left: -22rem;
+        margin-right: -5rem;
+    
+    
     }
-
+    
+    
+    .banner-card-2 {
+        width: 17rem;
+        height: 6rem;
+        margin-top: -22rem;
+        margin-left: 7rem;
+        padding-left: 1rem;
+    }
+    
     .banner-card-2 h3 {
         font-size: 30px;
     }
@@ -846,7 +872,9 @@ select{
     }
 
     .team,
-    .team-img-div {
+    .team-img-div,
+    .bmi-desc,
+    .calculator-desc {
         width: 22.0625rem;
     }
 
@@ -858,6 +886,57 @@ select{
     .team-desc {
         width: 19.3125rem;
     }
+
+    .bmi-desc {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .bmi-desc h1 {
+        font-size: 32px;
+    }
+
+    .bmi-card-header {
+        font-size: 16px;
+    }
+
+    .bmi-card {
+        height: 48.25rem;
+        flex-direction: column;
+        margin-top:0px;
+        margin-bottom: 66px;
+    }
+
+    .bmi-card-1 {
+        gap: 23px;
+        margin-top: 0px;
+        margin-left: -35PX;
+    }
+
+    .bmi-card-2 {
+        width: 22.125rem
+    }
+
+    input,
+    #sex,
+    #activity {
+        width: 36%;
+
+    }
+
+    #sex {
+        width: 47%;
+        height: 48px;
+
+    }
+
+    #activity {
+        width: 95%;
+        height: 48px;
+
+    }
+
+
 
 
 }
