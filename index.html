@@ -140,33 +140,56 @@
             </div>
 
             <div class="bmi-card">
-                <div class="bmi-card">
+                <div class="bmi-card-1">
+                    <h3 class="bmi-card-header">BMI Calculator Chart</h3>
+                    <table class="table">
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
 
-                    <div class="bmi-card-1">
-                        <h3 class="bmi-card-header">BMI Calculator Chart</h3>
-                        <table>
-                            <tr>
-                              <th>BMI</th>
-                              <th>Weight Status</th>
-                            </tr>
-                            <tr>
-                              <td>Below 18.5</td>
-                              <td>Underweight</td>
-                            </tr>
-                            <tr>
-                              <td>18.5 - 24.9</td>
-                              <td>Healthy</td>
-                            </tr>
-                            <tr>
-                                <td>25.0 - 29.9</td>
-                                <td>Overweight</td>
-                              </tr>
-                              <tr>
-                                <td>30.0 - and Above</td>
-                                <td>Obese</td>
-                              </tr>
-                          </table>
-                    </div>
+                <div class="bmi-card-2">
+                    <h3 class="bmi-card-header">Calculate your BMI</h3>
+                    <p class="paragraph">We believe fitness should be accessible to everyone, everywhere, regardless of
+                        income or access to a gym. </p>
+
+                    <form>
+                        <input type="text" placeholder="Hieght/cm">
+                        <input type="text" placeholder="Weight/kg">
+                        <input type="text" placeholder="Age">
+                        <select id="sex" name="sex" required>
+                            <option class="placeholder" value="" disabled selected hidden>Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                        </select><br>
+                        <select id="activity" name="activity" required>
+                            <option class="placeholder" value="" disabled selected hidden>Select an activity factor</option>
+                            <option value="male">Work</option>
+                            <option value="female">Swim</option>
+                            <option value="others">Run</option>
+                          </select>
+
+                    </form>
+                    <button class="btn orange-color">Calculate</button>
 
                 </div>
             </div>
